@@ -1,5 +1,8 @@
 package com.ipiecoles.batch.model;
 
+import com.ipiecoles.batch.repository.CommuneRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,7 +10,6 @@ import javax.persistence.Id;
 
 @Entity
 public class Commune {
-
     @Id
     @Column(length = 5)
     private String codeInsee;
@@ -78,4 +80,5 @@ public class Commune {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
+
 }
